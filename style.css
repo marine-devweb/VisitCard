@@ -40,6 +40,7 @@ img {
     "name-job"
     "description"
     "contacts";
+    text-align: center;
 }
   
 .description {
@@ -48,4 +49,15 @@ img {
 
 .name-job {
     grid-area: name-job;
- }
+}
+
+/* info apparait en premier pour les appareils < ou = à 400 pixels */
+@media (max-width: 400px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "info"
+        "portrait";
+        padding: 0;
+    }
+}
