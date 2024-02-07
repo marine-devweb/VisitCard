@@ -16,6 +16,7 @@ body, html {
     display: grid;
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
+    gap: 20px;
 }
 
 h1, h2 {
@@ -32,3 +33,19 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.info {
+    padding: 20px 0;
+    grid-template-areas: 
+    "name-job"
+    "description"
+    "contacts";
+}
+  
+.description {
+    margin-bottom: 50px;
+}
+
+.name-job {
+    grid-area: name-job;
+ }
